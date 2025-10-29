@@ -35,4 +35,5 @@ jobs:
           JF_URL: ${{ secrets.JF_URL }}
           JF_GIT_TOKEN: ${{ secrets.JF_GITHUB_TOKEN }}
           JF_GIT_BASE_BRANCH: ${{ matrix.branch }}    # For repository scan action
+          JF_WATCHES: "BD_BY_TEST_LIC_EXT_UB"
           #JFROG_CLI_LOG_LEVEL: "DEBUG"
