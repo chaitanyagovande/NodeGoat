@@ -31,6 +31,7 @@ jobs:
         # Insert to oidc-provider-name the 'Provider Name' defined in the OIDC integration configured in the JPD
         with:
           oidc-provider-name: ${{vars.JF_OIDC_PROVIDER_NAME}}
+          add-run-summary: true
         env:
           JF_URL: ${{ secrets.JF_URL }}
           JF_GIT_TOKEN: ${{ secrets.JF_GITHUB_TOKEN }}
